@@ -17,10 +17,10 @@ html {
     --font-1: "Inter", sans-serif;
 
   /* Variables tipograficas */
-    --text-caption: 0.8rem;
-    --text-note: 1rem;
+    --text-caption: 1.08rem;
+    --text-note: 1.2rem;
     --text-base: 1.4rem;
-    --text-title: 2.4rem;
+    --text-title: 1.8rem;
 
   /* Colores */
     --primary-1: hsl(0, 0%, 8%);
@@ -42,9 +42,70 @@ body {
     padding: 75px 0px;
 
     color: var(--secondary-1);
-    background-color: var(--primary-2);
+    background-color: var(--primary-1);
 
     font-family: var(--font-1);
     font-size: var(--text-base);
     font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 280px;
+
+    border-radius: 16px;
+
+    background-color: var(--primary-2);
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+
+    margin: 16px 0px;
+    border-radius: 50px;
+}
+
+.user-name {
+    margin: 8px 0px;
+
+    font-size: var(--text-title);
+    font-weight: 600;
+}
+
+.location {
+    color: var(--accent-1);
+    font-size: var(--text-caption);
+    font-weight: 600;
+}
+
+.profession {
+    margin: 8px 0px;
+
+    font-size: var(--text-note);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 16px 0px;
+}
+
+.social-links {
+    width: 248px;
+    height: 40px;
+
+    margin: 8px 0px;
+    padding: 12px 0px 0px;
+    border-radius: 8px;
+
+    background-color: var(--primary-3);
+
+    font-weight: 600;
+    text-align: center;
 }
