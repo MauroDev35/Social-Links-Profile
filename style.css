@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  /* Escala tipografica */
+    font-size: 62.5%;
+
+  /* Familias tipograficas */
+    --font-1: "Inter", sans-serif;
+
+  /* Variables tipograficas */
+    --text-caption: 0.8rem;
+    --text-note: 1rem;
+    --text-base: 1.4rem;
+    --text-title: 2.4rem;
+
+  /* Colores */
+    --primary-1: hsl(0, 0%, 8%);
+    --primary-2: hsl(0, 0%, 12%);
+    --primary-3: hsl(0, 0%, 20%);
+    --secondary-1: hsl(0, 0%, 100%);
+
+    --accent-1: hsl(75, 94%, 57%);
+
+  /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 75px 0px;
+
+    color: var(--secondary-1);
+    background-color: var(--primary-2);
+
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+    font-weight: 400;
+}
